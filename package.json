@@ -10,16 +10,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint --config .commitlintrc.js -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint --config .commitlintrc.js -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "*.{ts,tsx,js}": [
       "eslint --config .eslintrc.js"
-    ],
-    "*.{ts,tsx,js,json,html,yml,css,less,scss,md}": [
-      "prettier --write"
     ]
   },
   "repository": {
