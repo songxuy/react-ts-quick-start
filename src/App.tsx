@@ -1,5 +1,5 @@
-import React from 'react';
-import './app.scss';
+import React from 'react'
+import './app.scss'
 
 interface IProps {
   name: string
@@ -7,13 +7,13 @@ interface IProps {
 }
 
 function App(props: IProps) {
-  const { name, age } = props;
-  console.log('app');
+  const { name, age } = props
+  console.log('app')
   return (
-    <div className='app'>
+    <div className="app">
       <span>{`Hello! I'm ${name}, ${age} years old?`}</span>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
