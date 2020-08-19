@@ -1,6 +1,8 @@
 /node_modules
 /build
 /dist
+/scripts
+constant.js
 .eslintrc.js
 .commitlintrc.js
 package-lock.json

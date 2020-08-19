@@ -23,6 +23,7 @@ module.exports = {
         node: {
           extensions: ['.tsx', '.ts', '.js', '.json'],
         },
+        typescript: {},
       },
     },
     "plugins": [
@@ -32,6 +33,7 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
-      "linebreak-style": [0 ,"error", "windows"]
+      "linebreak-style": [0 ,"error", "windows"],
+      'import/no-extraneous-dependencies': ["error", { devDependencies: true }]
     }
 };
